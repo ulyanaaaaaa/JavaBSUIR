@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64eb2ec4-81a4-42a3-8db3-77997f30ef24" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/Entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/NodeProperties/AddEmployeeAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/NodeProperties/AddEmployeeProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/NodeProperties/DeleteEmployeeAttribyte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/NodeProperties/UpdateEmployeeAttribyte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/NodeProperties/UpdateEmployeeProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/Service/AddEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/Service/DeleteEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/Service/ReadXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/Service/SearchXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/java/com/DOMParse/WriteXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/DOM/src/main/resources/employee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JAXB/src/main/java/org/example/Model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JAXB/src/main/java/org/example/Model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/json/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/CustomExclusionStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/ExcludeField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/GsonExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/GsonExample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/SoftWare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Web/JSON/src/main/java/org/example/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/Laba1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/src/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba1/src/WriterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba2/src/Bouquet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba2/src/BouquetElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba2/src/Flower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba2/src/Rose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laba2/src/Tulip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/FactoryDirector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/Locksmith.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/PlantManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/Staff.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/Turner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/org/example/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Ситарис/Laba2/src/main/java/org/example/Bouquet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Ситарис/Laba2/src/main/java/org/example/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Ситарис/Laba2/src/main/java/org/example/OrderSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ТВиА/Laba1.max" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ТВиА/Laba2.max" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2mgiurPs3IYnFpStdecXgMule2C" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/BSUIR/5semestr/ПрогСП",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64eb2ec4-81a4-42a3-8db3-77997f30ef24" name="Changes" comment="" />
+      <created>1727504845579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1727504845579</updated>
+      <workItem from="1727504846560" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
