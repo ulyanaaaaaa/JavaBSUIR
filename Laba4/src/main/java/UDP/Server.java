@@ -2,7 +2,6 @@ package UDP;
 
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
 public class Server {
     public static void main(String[] args) {
@@ -37,20 +36,19 @@ class ClientHandler implements Runnable {
 
     @Override
     public void run() {
-        try {
-            String message = new String(packet.getData(), 0, packet.getLength()); // Преобразуем данные в строку
-            System.out.println("Received message: " + message);
-            String[] values = message.split(";");
-            double x = Double.parseDouble(values[0]);
-            double y = Double.parseDouble(values[1]);
-            double z = Double.parseDouble(values[2]);
-            double result = calculateFunction(x, y, z);
+        try (ByteArrayInputStream bais = new ByteArrayInputStream(packet.getData());
+             ObjectInputStream ois = new ObjectInputStream(bais)) {
+            DataPacket dataPacket = (DataPacket) ois.readObject();
+
+            System.out.println("Received packet: x=" + dataPacket.getX() + ", y=" + dataPacket.getY() + ", z=" + dataPacket.getZ());
+
+            double result = calculateFunction(dataPacket.getX(), dataPacket.getY(), dataPacket.getZ());
             String resultStr = String.valueOf(result);
             byte[] buffer = resultStr.getBytes();
             DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, packet.getAddress(), packet.getPort()); // Создаем пакет для отправки ответа
             socket.send(responsePacket); // Отправляем ответный пакет
             System.out.println("Sent result: " + resultStr);
-            saveToFile(x, y, z, result);
+            saveToFile(dataPacket.getX(), dataPacket.getY(), dataPacket.getZ(), result);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -68,3 +66,4 @@ class ClientHandler implements Runnable {
         }
     }
 }
+
