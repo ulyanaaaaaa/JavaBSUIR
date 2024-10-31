@@ -10,24 +10,26 @@ public class Client {
             Socket clientSocket = new Socket("127.0.0.1", 2525);
             System.out.println("connection established....");
 
-            ObjectOutputStream coos = new ObjectOutputStream(clientSocket.getOutputStream());
+            ObjectOutputStream coos = new ObjectOutputStream(clientSocket.getOutputStream()); //для отправки объектов на сервер
             ObjectInputStream cois = new ObjectInputStream(clientSocket.getInputStream());
+
             BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 
             System.out.println("Enter a mathematical expression to send to server \n\t('quit' − programme terminate)");
+
             String clientMessage = stdin.readLine();
             SerializeData data = new SerializeData(clientMessage);
             System.out.println("you've entered: " + data.getResult());
 
             while (!data.getResult().equals("quit")) {
-                coos.writeObject(data); // Отправляем сообщение на сервер
+                coos.writeObject(data);
                 coos.flush();
 
-                SerializeData serverResponse = (SerializeData) cois.readObject(); // Принимаем ответ от сервера
+                SerializeData serverResponse = (SerializeData) cois.readObject();
                 System.out.println("~server~: " + serverResponse.getResult());
                 System.out.println("---------------------------");
 
-                data = new SerializeData(stdin.readLine()); // Читаем новое сообщение от пользователя
+                data = new SerializeData(stdin.readLine());
                 System.out.println("you've entered: " + data.getResult());
             }
 

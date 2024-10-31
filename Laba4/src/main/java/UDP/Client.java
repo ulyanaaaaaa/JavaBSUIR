@@ -31,8 +31,8 @@ public class Client {
             packet = new DatagramPacket(buffer, buffer.length);
             socket.receive(packet);
 
-            String result = new String(packet.getData(), 0, packet.getLength()); // Преобразуем данные пакета в строку
-            System.out.println("Результат: " + result); // Выводим результат
+            String result = new String(packet.getData(), 0, packet.getLength());
+            System.out.println("Результат: " + result);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

@@ -45,8 +45,8 @@ class ClientHandler implements Runnable {
             double result = calculateFunction(dataPacket.getX(), dataPacket.getY(), dataPacket.getZ());
             String resultStr = String.valueOf(result);
             byte[] buffer = resultStr.getBytes();
-            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, packet.getAddress(), packet.getPort()); // Создаем пакет для отправки ответа
-            socket.send(responsePacket); // Отправляем ответный пакет
+            DatagramPacket responsePacket = new DatagramPacket(buffer, buffer.length, packet.getAddress(), packet.getPort());
+            socket.send(responsePacket);
             System.out.println("Sent result: " + resultStr);
             saveToFile(dataPacket.getX(), dataPacket.getY(), dataPacket.getZ(), result);
         } catch (Exception e) {
