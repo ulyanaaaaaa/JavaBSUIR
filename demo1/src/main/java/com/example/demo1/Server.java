@@ -1,4 +1,4 @@
-package com.example.javafx;
+package com.example.demo1;
 
 import java.io.*;
 import java.net.ServerSocket;
